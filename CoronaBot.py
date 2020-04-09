@@ -3,16 +3,8 @@
 # This program is dedicated to the public domain under the CC0 license.
 
 """
-Simple Bot to reply to Telegram messages.
+Simple bot to share information about covid 19 in Ecuador 
 
-First, a few handler functions are defined. Then, those functions are passed to
-the Dispatcher and registered at their respective places.
-Then, the bot is started and runs until we press Ctrl-C on the command line.
-
-Usage:
-Basic Echobot example, repeats messages.
-Press Ctrl-C on the command line or send a signal to the process to stop the
-bot.
 """
 
 import logging
@@ -52,11 +44,10 @@ def error(update, context):
     """Log Errors caused by Updates."""
     logger.warning('Update "%s" caused error "%s"', update, context.error)
 
-def provincia(update, context):
-    print(update.messate.text)
-    update.message.reply_text(fs.returnProvinceData(update.message.text))
-print(444)
-
+def province(update, context):
+    txt = fs.filterText(update.message.text,"/provincia ")
+    print(txt)
+    update.message.reply_text(fs.returnProvinceData(txt))
 def main():
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
@@ -71,7 +62,7 @@ def main():
     # on different commands - answer in Telegram
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help))
-    dp.add_handler(CommandHandler("provincia",provincia))
+    dp.add_handler(CommandHandler("provincia",province))
 
     # on noncommand i.e message - echo the message on Telegram
     dp.add_handler(MessageHandler(Filters.text, echo))
