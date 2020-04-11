@@ -1,26 +1,10 @@
-IndiceDiario ={
-    "AZUAY" : [100,2.7,5] ,
-    "BOLÍVAR-BOLIVAR" : [27,0.7,1], 
-    "CAÑAR" : [59,1.6,2],
-    "CARCHI" : [12,0.3,], 
-    "CHIMBORAZO" : [46,1.2,2], 
-    "COTOPAXI" : [23,0.6,1], 
-    "EL ORO" : [58,1.5,14], 
-    "ESMERALDAS" : [17,0.5,0], 
-    "GALÁPAGOS" : [11,0.3,1], 
-    "GUAYAS" : [2534, 67.6,130],
-    "IMBABURA" : [21,0.6,2],
-    "LOJA" : [27,0.7,0], 
-    "LOS RÍOS - LOS RIOS" : [158,4.2,10],
-    "MANABÍ - MANABI" : [88,2.3,3], 
-    "MORONA SANTIAGO" : [11,0.3,0],
-    "NAPO" : [2,0.05,0], 
-    "ORELLANA" : [4,0.11,0],
-    "PASTAZA" : [12,0.32,0], 
-    "PICHINCHA" : [395,10.5,10],
-    "SANTA ELENA" : [52,1.4,4],
-    "SANTO DOMINGO DE LOS TSÁCHILAS - SANTO DOMINGO - SANTO DOMINGO DE LOS TSACHILAS" : [36,1.0,2],
-    "SUCUMBÍOS-SUCUMBIOS" : [30,0.8,1], 
-    "TUNGURAHUA" : [22,0.6,3], 
-    "ZAMORA CHINCHIPE" : [2,0.1,0]
-}
+
+#Existe este indice debido a que la gente no distingue al escribir con tilde
+IndiceDiario =[
+    "AZUAY" ,"BOLÍVAR-BOLIVAR","CAÑAR" ,"CARCHI" ,"CHIMBORAZO",  "COTOPAXI" , 
+    "EL ORO" , "ESMERALDAS" ,  "GALÁPAGOS" ,  "GUAYAS" ,"IMBABURA" ,"LOJA" , "LOS RÍOS - LOS RIOS" ,"MANABÍ - MANABI" , 
+    "MORONA SANTIAGO" ,"NAPO" , "ORELLANA" ,"PASTAZA" , "PICHINCHA" ,"SANTA ELENA" ,
+    "SANTO DOMINGO DE LOS TSÁCHILAS - SANTO DOMINGO - SANTO DOMINGO DE LOS TSACHILAS" ,"SUCUMBÍOS-SUCUMBIOS", "TUNGURAHUA" , "ZAMORA CHINCHIPE" 
+    ]
+
+print(len(IndiceDiario))
